@@ -1,0 +1,47 @@
+{
+  "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDelete": false,
+    "git.openRepositoryInParentFolders": "never",
+    "liveSassCompile.settings.formats": [
+
+
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        
+        },
+    ],
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "redhat.telemetry.enabled": true,
+    "java.configuration.runtimes": [
+        {
+    "name": "JavaSE-1.8",
+    "path": "/path/to/jdk-8",
+  },
+  {
+    "name": "JavaSE-11",
+    "path": "/path/to/jdk-11",
+  },
+  {
+    "name": "JavaSE-17",
+    "path": "/path/to/jdk-17",
+    "default": true
+  },
+    
+    ],
+    "liveServer.settings.donotVerifyTags": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Dracula"
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Cart</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div x-data="counter">
+    <h1>Perfect Pizza</h1>
+
+    <div class="Cart">
+      <h2>Shopping Cart</h2>
+
+      <template x-for="pizza in cartPizzas">
+        <tr>
+          <td x-text="pizza.flavour"></td>
+          <td x-text="pizza.size"></td>
+          <td x-text="pizza.price"></td>
+          <td>
+            <button @click="addPizzaToCart(pizza.id)">+</button>
+            x<span x-text="pizza.qty"></span>
+            <button @click="removePizzaFromCart(pizza.id)">-</button>
+          </td>
+          <td x-text="pizza.total.toFixed(2)"></td>
+        </tr>
+      </template>
+
+      <p>Total Cost: R<span x-text="cartTotal.toFixed(2)"></span></p>
+
+  
+        <div class="payment">
+          <p>Payment amount:<input type="text" x-model="paymentAmount"></p>
+        </div>
+        <button class="paybtn" @click="pay">Pay</button>
+
+      <!-- <div x-show="checkbtn">
+        <button @click="checkout">Checkout</button>
+      </div> -->
+    </div>
+
+    <template x-for="pizza in pizzas">
+      <div class="pizza">
+      <h4 x-text="pizza.flavour"></h4>
+      <span x-text="pizza.size"></span>
+      <span x-text="pizza.price"></span>
+      <button @click="addPizzaToCart(pizza.id)">Add to cart</button>
+      </div>
+    </template>
+    
+  </div>
+
+  <script src="counter.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.pizza{
+    border: 2px black solid;
+   
+}
+
+.Cart{
+    text-align: center;
+    background-color: var(--lightred);
+    padding-top: 1%;
+    padding-bottom: 6%;
+    margin-bottom: 3%;
+}
+
+.Large {
+    float: left;
+    width: 33%;
+    background-color: var(--maroon);
+    margin-right: 0.5%;
+    padding-bottom: 5%;
+}
+.Medium {
+    float: left;
+    width: 33%;
+    background-color: var(--dark);
+    margin-right: 0.5%;
+    padding-bottom: 5%;
+}
+
+.Small{
+    float: left;
+    width: 33%;
+    background-color: var(--darkred);
+    padding-bottom: 5%;
+
+}
+:root {
+    --dark :#220901;
+    --maroon: #621708;
+    --darkred: #941b0c;
+    --lightred: #bc3908;
+    --yellow: #f6aa1c;
+}
+body {
+    background-color: var(--yellow);
+    color: white;
+    text-align: center;
+    margin: 0%;
+    max-height: 100vh;
+}
+
+h1{
+    color: var(--dark);
+}
+
+.footer {
+    clear: both;
+    background-color: var(--lightred);
+    padding-top: 1%;
+}
